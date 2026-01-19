@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    outline: none;
+}
+.container {
+    padding: 0 10%;
+    height: 100vh;
+}
+.flow{
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+p{
+    font-size: 17px;
+}
+.large{
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+button{
+    padding: 15px 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgb(192, 189, 189);
+    font-weight: 500;
+    cursor: pointer;
+}
+.sec_button{
+    margin-top: 50px;
+    border-radius: 50px;
+}
+.box{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+
+header{
+    width: 90vw;
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.1); 
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,.1);
+}
+header .logo{
+    display: flex;
+    gap: 2.5rem;
+    align-items: baseline;
+    margin-left: 50px;
+}
+header .logo ul{
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+}
+.buttons #login{
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.buttons #signup{
+    background-color: black;
+    color: white;
+    border-radius: 70px;
+}
+
+
+/* ------------- main ----------- */
+main{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+main.container{
+    height: 120vh;
+}
+main .left{
+    margin-top: 50px;
+}
+main .left .text{
+    margin-bottom: 50px;
+}
+main .left .start{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    gap: 10px;
+}
+main .left .start input{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: rgba(0,0,0,.1);
+    font-size: 16px;
+    border-radius: 50px 0 0 50px  ;
+}
+main .left .start button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: inherit;
+}
+main .right img{
+    width: 100%;
+}
+
+/* ----------- create -----------  */
+
+
+.create{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: aliceblue;
+}
+.create .animations {
+    width: 100%;
+    height: 100%;
+}
+.create .large{
+    color: rgb(0, 68, 0);
+}
+
+.create .sec_button{
+    color: white;
+    background-color: rgb(0, 68, 0);
+}
+
+
+/* ---------- share ------------- */
+
+.share{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: rgb(105, 2, 2);
+}
+.share .large{
+    color: rgb(255, 206, 214); 
+}
+.share .sec_button{
+    background-color: rgb(255, 206, 214); 
+}
+
+
+/* ------------- analyze ----------- */
+
+.analyze{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    background-color: rgb(211, 250, 149);
+}
+.analyze .sec_button{
+    background-color: rgb(252, 176, 188);
+}
+
+.analyze .boxes{
+    height: 50%;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.analyze .boxes .up, 
+.analyze .boxes .down{
+    /* background-color: green; */
+    height: 50%;
+    display: flex;
+    gap: 1rem;
+}
+.analyze .boxes .up .graph{
+    width: 70%;
+    background-color: purple;
+}
+.analyze .boxes .up .track_plays{
+    width: 30%;
+    background-color: white;
+}
+.analyze .boxes .down .sales{
+    width: 30%;
+    background-color: lightblue;
+}
+.analyze .boxes .down .visits{
+    width: 70%;
+    background-color: tomato;
+}
+
+
+
+/* ----------- link bio ------------- */
+
+.link_bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 5% 10%;
+}
+.link_bio .large{
+    margin: 50px 0;
+}
+.link_bio .images_slides{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+.link_bio .images_slides div{
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.link_bio .boxes {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+.link_bio .boxes .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.link_bio .boxes .left .top, 
+.link_bio .boxes .left .bottom{
+    height: 50%;
+}
+.link_bio .top{
+    background-color: pink;
+}
+.link_bio .bottom{
+    background-color: yellow;
+}
+.link_bio .boxes .right{
+    width: 50%;
+    background-color: blue;
+}
+
+
+
+/* ------------- questionsBox --------------- */
+.questionsBox{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.questionsBox .questions {
+    width: 100%;
+}
+.questionsBox .large{
+    color: pink;
+}
+.questionsBox .questions .question{
+    width: 100%;
+    background-color: rgb(110, 0, 0);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    color: pink;
+}
+.question p{
+    color: pink;
+}
+.question .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: pink;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
