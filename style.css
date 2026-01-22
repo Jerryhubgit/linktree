@@ -46,6 +46,10 @@ button{
     padding: 10px;
     border: 1px solid rgba(0,0,0,.2);
 }
+input{
+    border: none;
+    padding: 10px;
+}
 
 
 header{
@@ -271,6 +275,38 @@ main .right img{
 }
 
 
+/* ------------ featured --------------- */
+
+.featured{
+    text-align: center;
+    background-color: rgb(253, 247, 247);
+}
+.featured .features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 30px 0;
+}
+.featured .features .top, 
+.featured .features .bottom{
+    display: flex;
+    gap: 1rem;
+}
+.features .top div, 
+.features .bottom div{
+    padding: 20px 60px;
+    border-radius: 70px;
+    background-color: white;
+}
+.featured img{
+    width: 40%;
+    border-radius: 120px;
+    margin-bottom: 40px;
+}
+.featured .artist_info .buttons{
+    margin: 20px 0 ;
+}
 
 /* ------------- questionsBox --------------- */
 .questionsBox{
@@ -306,6 +342,47 @@ main .right img{
     color: pink;
     font-weight: 500;
     font-size: 17px;
+}
+
+
+/* ------------------ jump_start ------------------- */
+
+.jump_start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center ;
+    background-color: plum;
+}
+.jump_start .start{
+    border: 1px solid rgba(0,0,0,.1);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    padding: 10px;
+    border-radius: 70px;
+    margin: 30px;
+    background-color: white;
+}
+.jump_start .start button{
+    border-radius: inherit;
+    background-color: black;
+    color: white;
+}
+footer{
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+footer .top{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 2;
 }
 
 
