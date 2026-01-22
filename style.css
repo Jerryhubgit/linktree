@@ -37,6 +37,7 @@ button{
     cursor: pointer;
 }
 .sec_button{
+    padding: 20px 60px;
     margin-top: 50px;
     border-radius: 50px;
 }
